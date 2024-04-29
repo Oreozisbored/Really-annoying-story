@@ -1,0 +1,277 @@
+:: StoryTitle
+Really annoying dungeon 
+
+
+:: StoryData
+{
+  "ifid": "366F2372-DDD8-4C9F-B921-B74BA948C23C",
+  "format": "Harlowe",
+  "format-version": "3.3.8",
+  "start": "start",
+  "zoom": 1
+}
+
+
+:: THIS WAY! {"position":"1600,600","size":"100,100"}
+You start to think that this dungeon goes on forever, do you [[eat spaghetti]], [[drink health potion]], or do you [[cast fireball]]
+
+
+:: apple {"position":"1275,2600","size":"100,100"}
+You eat the apple, and have the ability to instantly explode, you get sent to the [[underworld->cast fireball]] 
+
+
+:: backwards {"position":"1825,500","size":"100,100"}
+You are in a dungeon, do you go [[left]], [[forward]], [[right]], or [[backwards]]?
+
+
+
+
+
+
+
+A sign says, "[[THIS WAY!]]"
+
+
+:: backwards2 {"position":"1200,1350","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: banana {"position":"1150,2600","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: blue pill {"position":"1325,1075","size":"100,100"}
+You feel the urge to [[eat spaghetti]], but you also want to [[eat the orange pill that appears your hand]]
+
+
+:: cast fireball {"position":"1375,700","size":"100,100"}
+You break the room, and get summoned by a magical creature, he says, go hang your head in shame in the shame tank, you are in underworld $underworld
+
+Do you go to the [[shame tank]], or do you go to the [[door]] in the corner
+
+
+:: cower {"position":"1475,975","size":"100,100"}
+You get stuck in place, and you are sent to the [[underworld->cast fireball]]
+#(print:$underworld+1)    (set: $underworld to $underworld + 1)
+
+
+:: diagonal left backwards {"position":"950,2025","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: diagonal left forward {"position":"1225,1825","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: diagonal right backwards {"position":"1425,1825","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: diagonal right forward {"position":"1225,2025","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: dig downwards {"position":"1075,2175","size":"100,100"}
+do you dig [[dig downwards->dig downwards2]], or [[fly upwards]] 
+
+
+:: dig downwards2 {"position":"1075,2275","size":"100,100"}
+do you dig [[dig downwards->dig downwards3]], or [[fly upwards->fly upwards]] 
+
+
+:: dig downwards3 {"position":"1175,2275","size":"100,100"}
+do you dig [[dig downwards->dig downwards4]], or [[fly upwards->fly upwards]] 
+
+
+:: dig downwards4 {"position":"1275,2275","size":"100,100"}
+do you dig [[dig downwards->dig downwards5]], or [[fly upwards->fly upwards]] 
+
+
+:: dig downwards5 {"position":"1075,2375","size":"100,100"}
+do you [[dig downwards]], or [[fly upwards]] 
+
+
+:: door {"position":"1525,825","size":"100,100"}
+You exit the door, and head [[forward->start]] 
+
+
+:: down2 {"position":"925,1600","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: drink health potion {"position":"1825,725","size":"100,100"}
+Uh oh, it was a negitive health potion, you explode and [[go down to the underworld->cast fireball]] 
+
+
+:: eat spaghetti {"position":"1650,800","size":"100,100"}
+You explode because spaghetti is too good, and filled you up, and you go down to the [[underworld->cast fireball]] 
+
+
+:: eat the orange pill that appears your hand {"position":"1375,1225","size":"100,100"}
+you explode, thats it, [[restart->start]] 
+
+
+:: eight {"position":"900,2900","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: eleven {"position":"1200,2900","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: fifteen {"position":"1000,3000","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: fith dimention {"position":"1400,2025","size":"100,100"}
+You decide to start exploring in a new way, do you [[dig downwards]], or [[fly upwards]]
+
+
+:: five {"position":"1200,2800","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: fly final {"position":"1275,2475","size":"100,100"}
+You find your way into a field, and have the choice,
+[[apple]], [[orange]], or [[banana]]
+
+
+:: fly upwards {"position":"1575,2175","size":"100,100"}
+do you dig [[dig downwards->dig downwards]], or [[fly upwards2]] 
+
+
+:: fly upwards2 {"position":"1575,2275","size":"100,100"}
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards3]] 
+
+
+:: fly upwards3 {"position":"1475,2275","size":"100,100"}
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards4]] 
+
+
+:: fly upwards4 {"position":"1375,2275","size":"100,100"}
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards5]] 
+
+
+:: fly upwards5 {"position":"1575,2375","size":"100,100"}
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly final]] 
+
+
+:: forward {"position":"1850,350","size":"100,100"}
+You are in a dungeon, do you go [[left]], [[forward]], [[right]], or [[backwards]]?
+
+
+:: forward2 {"position":"925,1350","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: four {"position":"1100,2800","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: fourteen {"position":"900,3000","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: into the fourth dimension {"position":"950,1825","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]], OR you go to the [[fith dimention]]
+
+
+:: left {"position":"1400,325","size":"100,100"}
+You are in a dungeon, do you go [[left]], [[forward]], [[right]], or [[backwards]]?
+
+
+:: left2 {"position":"1200,1550","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: nine {"position":"1000,2900","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: one {"position":"800,2800","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: orange {"position":"1400,2600","size":"100,100"}
+You have the ability to attract anyone, you get squished in a mob of people and animals, you get nocliped into a [[dungeon->start]]
+
+
+:: rainbow sparkely pill {"position":"1175,1225","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: red pill {"position":"1125,1100","size":"100,100"}
+You suddently feel sleepy and go into a [[dream->start]] 
+
+
+:: right {"position":"1425,550","size":"100,100"}
+You are in a dungeon, do you go [[left]], [[forward]], [[right]], or [[backwards]]?
+
+
+:: right2 {"position":"1450,1350","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
+
+
+:: run {"position":"1175,975","size":"100,100"}
+You start running and running, and you break free from the chains of reality, do you take the 
+[[red pill]]
+[[blue pill]]
+[[rainbow sparkely pill]]
+
+
+:: seven {"position":"800,2900","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: shame tank {"position":"1300,825","size":"100,100"}
+**OH NO!** You went to the shame tank, and got thrown tomatos at you
+
+Do you, [[run]] or do you [[cower]] and hide
+
+
+:: six {"position":"1300,2800","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: start {"position":"1600,200","size":"100,100"}
+You are in a dungeon, do you go [[left]], [[forward]], [[right]], or [[backwards]]?  (set: $underworld to 1)
+
+
+:: ten {"position":"1100,2900","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: thirteen {"position":"800,3000","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: three {"position":"1000,2800","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: twelve {"position":"1300,2900","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: two {"position":"900,2800","size":"100,100"}
+You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: up2 {"position":"1450,1550","size":"100,100"}
+You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]]
