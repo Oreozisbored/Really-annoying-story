@@ -1,5 +1,5 @@
 :: StoryTitle
-Really annoying dungeon 
+Really annoying dungeon
 
 
 :: StoryData
@@ -12,12 +12,28 @@ Really annoying dungeon
 }
 
 
+:: \ throw coins {"position":"1175,3225","size":"100,100"}
+You throw your coins at the robot, and they get vewy.. vewyy angry...............................
+
+It throws you at the [[angy room]]
+
+
+:: 9857643759873495 {"position":"700,2600","size":"100,100"}
+(set: $coins = $coins + 9857643759873495)
+You have $coins coins, you see some more coins, do you take
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
 :: THIS WAY! {"position":"1600,600","size":"100,100"}
 You start to think that this dungeon goes on forever, do you [[eat spaghetti]], [[drink health potion]], or do you [[cast fireball]]
 
 
+:: angy room {"position":"1000,3200","size":"100,100"}
+You decide to either, [[walk out ->fly final]], or [[exit the door ->door]]
+
+
 :: apple {"position":"1275,2600","size":"100,100"}
-You eat the apple, and have the ability to instantly explode, you get sent to the [[underworld->cast fireball]] 
+You eat the apple, and have the ability to instantly explode, you get sent to the [[underworld->cast fireball]]
 
 
 :: backwards {"position":"1825,500","size":"100,100"}
@@ -40,13 +56,15 @@ You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right-
 You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
+(set:$coins = 0)
+
 
 :: blue pill {"position":"1325,1075","size":"100,100"}
 You feel the urge to [[eat spaghetti]], but you also want to [[eat the orange pill that appears your hand]]
 
 
 :: cast fireball {"position":"1375,700","size":"100,100"}
-You break the room, and get summoned by a magical creature, he says, go hang your head in shame in the shame tank, you are in underworld $underworld
+You break the room, and get summoned by a magical creature, he says, go hang your head in shame in the shame tank, you check your watch, it is (current-time:), and then you check your surrondings, you are in underworld $underworld
 
 Do you go to the [[shame tank]], or do you go to the [[door]] in the corner
 
@@ -73,27 +91,27 @@ You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right-
 
 
 :: dig downwards {"position":"1075,2175","size":"100,100"}
-do you dig [[dig downwards->dig downwards2]], or [[fly upwards]] 
+do you dig [[dig downwards->dig downwards2]], or [[fly upwards]]
 
 
 :: dig downwards2 {"position":"1075,2275","size":"100,100"}
-do you dig [[dig downwards->dig downwards3]], or [[fly upwards->fly upwards]] 
+do you dig [[dig downwards->dig downwards3]], or [[fly upwards->fly upwards]]
 
 
 :: dig downwards3 {"position":"1175,2275","size":"100,100"}
-do you dig [[dig downwards->dig downwards4]], or [[fly upwards->fly upwards]] 
+do you dig [[dig downwards->dig downwards4]], or [[fly upwards->fly upwards]]
 
 
 :: dig downwards4 {"position":"1275,2275","size":"100,100"}
-do you dig [[dig downwards->dig downwards5]], or [[fly upwards->fly upwards]] 
+do you dig [[dig downwards->dig downwards5]], or [[fly upwards->fly upwards]]
 
 
 :: dig downwards5 {"position":"1075,2375","size":"100,100"}
-do you [[dig downwards]], or [[fly upwards]] 
+do you [[dig downwards]], or [[fly upwards]]
 
 
 :: door {"position":"1525,825","size":"100,100"}
-You exit the door, and head [[forward->start]] 
+You exit the door, and head [[forward->start]]
 
 
 :: down2 {"position":"925,1600","size":"100,100"}
@@ -101,29 +119,32 @@ You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right-
 
 
 :: drink health potion {"position":"1825,725","size":"100,100"}
-Uh oh, it was a negitive health potion, you explode and [[go down to the underworld->cast fireball]] 
+Uh oh, it was a negitive health potion, you explode and [[go down to the underworld->cast fireball]]
 
 
 :: eat spaghetti {"position":"1650,800","size":"100,100"}
-You explode because spaghetti is too good, and filled you up, and you go down to the [[underworld->cast fireball]] 
+You explode because spaghetti is too good, and filled you up, and you go down to the [[underworld->cast fireball]]
 
 
 :: eat the orange pill that appears your hand {"position":"1375,1225","size":"100,100"}
-you explode, thats it, [[restart->start]] 
+you explode, thats it, [[restart->start]]
 
 
 :: eight {"position":"900,2900","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 8)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
 :: eleven {"position":"1200,2900","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 11)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
 :: fifteen {"position":"1000,3000","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 15)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
@@ -132,7 +153,8 @@ You decide to start exploring in a new way, do you [[dig downwards]], or [[fly u
 
 
 :: five {"position":"1200,2800","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 5)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
@@ -142,23 +164,23 @@ You find your way into a field, and have the choice,
 
 
 :: fly upwards {"position":"1575,2175","size":"100,100"}
-do you dig [[dig downwards->dig downwards]], or [[fly upwards2]] 
+do you dig [[dig downwards->dig downwards]], or [[fly upwards2]]
 
 
 :: fly upwards2 {"position":"1575,2275","size":"100,100"}
-do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards3]] 
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards3]]
 
 
 :: fly upwards3 {"position":"1475,2275","size":"100,100"}
-do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards4]] 
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards4]]
 
 
 :: fly upwards4 {"position":"1375,2275","size":"100,100"}
-do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards5]] 
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly upwards5]]
 
 
 :: fly upwards5 {"position":"1575,2375","size":"100,100"}
-do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly final]] 
+do you dig [[dig downwards->dig downwards]], or [[fly upwards->fly final]]
 
 
 :: forward {"position":"1850,350","size":"100,100"}
@@ -170,17 +192,33 @@ You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right-
 
 
 :: four {"position":"1100,2800","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 4)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
 :: fourteen {"position":"900,3000","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 14)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+:: hospital {"position":"1300,3600","size":"100,100"}
+You get rushed out of the hospital, and, you win!
+
+[[Restart->start]]
+
+
+:: ignore {"position":"1300,3100","size":"100,100"}
+You ignore the riches, and decide to venture further, there is a humanoid robot in front of you, do you, [[push the robot]], [[kick the robot]], [[punch the robot]], [[throw the robot]], [[throw your $coins coins at the robot -> throw coins]] 
 
 
 :: into the fourth dimension {"position":"950,1825","size":"100,100"}
 You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right->right2]], [[up->up2]], [[down->down2]], [[diagonal left forward]], [[diagonal left backwards]], [[diagonal right forward]], [[diagonal right backwards]], [[into the fourth dimension]], or [[backwards->backwards2]], OR you go to the [[fith dimention]]
+
+
+:: kick the robot {"position":"1250,3350","size":"100,100"}
+You break your foot, and get rushed to the [[hospital]]
 
 
 :: left {"position":"1400,325","size":"100,100"}
@@ -192,17 +230,30 @@ You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right-
 
 
 :: nine {"position":"1000,2900","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
-[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+(set: $coins = $coins + 9)
+You have $coins coins, you see some more coins, do you take
+[[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[ignore]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
 :: one {"position":"800,2800","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 1)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
+
+
+Or maybe you clean the house, and take [[9857643759873495]] coins
 
 
 :: orange {"position":"1400,2600","size":"100,100"}
 You have the ability to attract anyone, you get squished in a mob of people and animals, you get nocliped into a [[dungeon->start]]
+
+
+:: punch the robot {"position":"1362.5,3350","size":"100,100"}
+You break your hand, and get rushed to the [[hospital]]
+
+
+:: push the robot {"position":"1300,3225","size":"100,100"}
+The robot pushes you into the ground, and clips you into the [[start of the dungeon ->start]] 
 
 
 :: rainbow sparkely pill {"position":"1175,1225","size":"100,100"}
@@ -210,7 +261,7 @@ You are in a dungeon, do you go [[left->left2]], [[forward->forward2]], [[right-
 
 
 :: red pill {"position":"1125,1100","size":"100,100"}
-You suddently feel sleepy and go into a [[dream->start]] 
+You suddently feel sleepy and go into a [[dream->start]]
 
 
 :: right {"position":"1425,550","size":"100,100"}
@@ -229,7 +280,8 @@ You start running and running, and you break free from the chains of reality, do
 
 
 :: seven {"position":"800,2900","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 7)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
@@ -240,7 +292,8 @@ Do you, [[run]] or do you [[cower]] and hide
 
 
 :: six {"position":"1300,2800","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 6)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
@@ -249,27 +302,36 @@ You are in a dungeon, do you go [[left]], [[forward]], [[right]], or [[backwards
 
 
 :: ten {"position":"1100,2900","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 10)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
 :: thirteen {"position":"800,3000","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 13)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
 :: three {"position":"1000,2800","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 3)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
+:: throw the robot {"position":"1425,3225","size":"100,100"}
+The robot dissapears, and you have two doors, do you go [[left ->start]], or [[right ->start]] 
+
+
 :: twelve {"position":"1300,2900","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 12)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
 :: two {"position":"900,2800","size":"100,100"}
-You eat the banana, and have the ability to see though dirt, and you see coins, do you take,
+(set: $coins = $coins + 2)
+You have $coins coins, you see some more coins, do you take
 [[one]], [[two]], [[three]], [[four]], [[five]], [[six]], [[seven]], [[eight]], [[nine]], [[ten]], [[eleven]], [[twelve]], [[thirteen]], [[fourteen]], or [[fifteen]]
 
 
